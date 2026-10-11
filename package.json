@@ -1,0 +1,29 @@
+{
+  "name": "creatorcoin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "abi": "cd contracts && pnpm hardhat compile && cd .. && node scripts/gen-abi.cjs"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5",
+    "next": "15.5.27",
+    "react": "19.1",
+    "react-dom": "19.1",
+    "viem": "2",
+    "wagmi": "2.19.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4",
+    "@types/node": "^26.6.5",
+    "@types/react": "19.1",
+    "@types/react-dom": "19.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "4",
+    "typescript": "~5.8.0"
+  }
+}
