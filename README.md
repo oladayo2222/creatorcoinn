@@ -6,6 +6,12 @@ Built for the 45-in-90 BOTChain Challenge.
 Chain: BOT Chain Testnet (968) → Mainnet (677)
 Tech: Next.js, Solidity, Wagmi, Tailwind
 
+## Deployments
+
+| Network | CreatorCoin | Explorer |
+|---|---|---|
+| BOT Chain Testnet (968) | `0x2faddc7126524dd58f348ee402127445fca0b38c` | [verified source](https://scan.bohr.life/address/0x2faddc7126524dd58f348ee402127445fca0b38c#code) |
+
 ## How it works
 
 - A creator calls `register` and gets coin #1, which can never be sold.
@@ -38,6 +44,7 @@ pnpm install
 cp .env.example .env          # add DEPLOYER_PRIVATE_KEY (a wallet holding some tBOT)
 pnpm test                     # 9 tests
 pnpm deploy:testnet           # prints the CreatorCoin address
+pnpm verify:testnet <address> <usdt> <treasury>   # publish source on BOTScan
 ```
 
 Get tBOT and test USDT from https://faucet.botchain.ai/basic.

@@ -5,7 +5,9 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy:testnet": "hardhat run scripts/deploy.ts --network botTestnet",
-    "deploy:mainnet": "hardhat run scripts/deploy.ts --network botMainnet"
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network botMainnet",
+    "verify:testnet": "hardhat verify --network botTestnet",
+    "verify:mainnet": "hardhat verify --network botMainnet"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
